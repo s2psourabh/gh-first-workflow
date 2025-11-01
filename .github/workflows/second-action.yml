@@ -1,0 +1,10 @@
+name: Second Workflow
+on: [workflow_dispatch]
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Multi Line Run
+        run: |
+          echo "First Output"
+          echo "Second Output"
