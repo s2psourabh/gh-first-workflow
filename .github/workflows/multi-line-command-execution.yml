@@ -4,6 +4,9 @@ jobs:
     multiline-commnd:
         runs-on: ubuntu-22.04
         steps:
+            - name: Checkout Repo
+              uses: actions/checkout@v4
+              
             - name: Multi Line Execution
               run: |
                 ls -l
