@@ -1,0 +1,11 @@
+name: Execution Of Multiline Command
+on: push
+jobs:
+    multiline-commnd:
+        runs-on: ubuntu-22.04
+        steps:
+            - name: Multi Line Execution
+              run: |
+                ls -l
+                cat README.md
+                echo "Hello from KodeKloude"
